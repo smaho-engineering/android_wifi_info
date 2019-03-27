@@ -10,7 +10,7 @@ import io.flutter.plugin.common.PluginRegistry.Registrar;
 public class AndroidWifiInfoPlugin implements MethodCallHandler {
   /** Plugin registration. */
   public static void registerWith(Registrar registrar) {
-    final MethodChannel channel = new MethodChannel(registrar.messenger(), "android_wifi_info");
+    final MethodChannel channel = new MethodChannel(registrar.messenger(), "eng.smaho.com/android_wifi_info");
     channel.setMethodCallHandler(new AndroidWifiInfoPlugin());
   }
 

@@ -3,7 +3,7 @@
 @implementation AndroidWifiInfoPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
   FlutterMethodChannel* channel = [FlutterMethodChannel
-      methodChannelWithName:@"android_wifi_info"
+      methodChannelWithName:@"eng.smaho.com/android_wifi_info"
             binaryMessenger:[registrar messenger]];
   AndroidWifiInfoPlugin* instance = [[AndroidWifiInfoPlugin alloc] init];
   [registrar addMethodCallDelegate:instance channel:channel];
