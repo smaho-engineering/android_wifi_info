@@ -2,7 +2,7 @@ name: android_wifi_info
 description: Dart plugin package for accessing Android's WifiInfo from Flutter. Android-only plugin.
 version: 0.0.1
 author: Vince Varga <vince.varga@smaho.com>
-homepage: https://github.com/smaho-gmbh/android_wifi_info
+homepage: https://github.com/smaho-engineering/android_wifi_info
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

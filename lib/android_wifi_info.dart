@@ -87,8 +87,15 @@ class AndroidWifiInfo {
 
   /// MAC Address.
   ///
-  /// TODO: Add example converting integer to "readable" string
-  static Future<int> get macAddress {
+  /// Using these device identifiers is not recommended other than for high
+  /// value fraud prevention and advanced telephony use-cases. For advertising
+  /// use-cases, use AdvertisingIdClient$Info#getId and for analytics, use
+  /// InstanceId#getId.
+  ///
+  /// More info:
+  /// * https://developer.android.com/training/articles/user-data-ids.html
+  /// * https://developer.android.com/about/versions/marshmallow/android-6.0-changes#behavior-hardware-id
+  static Future<String> get macAddress {
     return _channel.invokeMethod('macAddress');
   }
 
@@ -129,7 +136,7 @@ class AndroidWifiInfo {
     return _channel.invokeMethod('supplicantState');
   }
 
-  /// current transmit link speed in [linkSpeedUnits] (Mbps).
+  /// Current transmit link speed in [linkSpeedUnits] (Mbps).
   static Future<int> get txLinkSpeedMbps {
     return _channel.invokeMethod('txLinkSpeedMbps');
   }

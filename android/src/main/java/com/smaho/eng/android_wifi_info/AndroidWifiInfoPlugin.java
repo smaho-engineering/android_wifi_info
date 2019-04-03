@@ -104,6 +104,9 @@ public class AndroidWifiInfoPlugin implements MethodCallHandler {
     if (wifiInfo != null) {
       if (Build.VERSION.SDK_INT >= 21) {
         frequency = wifiInfo.getFrequency();
+        if (frequency == -1) {
+          frequency = null;
+        }
       }
     }
     result.success(frequency);
@@ -121,6 +124,9 @@ public class AndroidWifiInfoPlugin implements MethodCallHandler {
     Integer ipAddress = null;
     if (wifiInfo != null) {
       ipAddress = wifiInfo.getIpAddress();
+      if (ipAddress == 0) {
+        ipAddress = null;
+      }
     }
     result.success(ipAddress);
   }
@@ -143,6 +149,12 @@ public class AndroidWifiInfoPlugin implements MethodCallHandler {
     if (wifiInfo != null) {
       // Using getMacAddress to get device identifiers is not recommended.
       macAddress = wifiInfo.getMacAddress();
+      // Android fakes it sometimes... More info:
+      // https://developer.android.com/training/articles/user-data-ids.html
+      // https://developer.android.com/about/versions/marshmallow/android-6.0-changes#behavior-hardware-id
+      if (macAddress != null && macAddress.equals("02:00:00:00:00:00")) {
+        macAddress = null;
+      }
     }
     result.success(macAddress);
   }
@@ -166,6 +178,9 @@ public class AndroidWifiInfoPlugin implements MethodCallHandler {
     Integer rssi = null;
     if (wifiInfo != null) {
       rssi = wifiInfo.getRssi();
+      if (rssi == -127) {
+        rssi = null;
+      }
     }
     result.success(rssi);
   }
@@ -199,7 +214,7 @@ public class AndroidWifiInfoPlugin implements MethodCallHandler {
         // Prior to Build.VERSION_CODES.JELLY_BEAN_MR1, this method always returned
         // the SSID with no quotes around it.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-          if (ssid.startsWith("\"") && ssid.endsWith("\"")) {
+          if (ssid != null && ssid.startsWith("\"") && ssid.endsWith("\"")) {
             ssid = ssid.substring(1, ssid.length() - 1);
           }
         }

@@ -18,3 +18,5 @@ It describes the state of any Wifi connection that is active or is in the proces
 * Android Q? tx, rx link speed
 * make sure dart pub links are all present and correct
 * consider adding code snippets to the documentation
+* example app docs contains links. could open it in browser...
+* make mac address work with proper permissions or at least document it
