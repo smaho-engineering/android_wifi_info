@@ -1,8 +1,18 @@
-# android_wifi_info_example
+# `android_wifi_info` Example App
 
-Demonstrates how to use the android_wifi_info plugin.
+Demonstrates how to use the `android_wifi_info` plugin.
 
-## Getting Started
+For a working example app, see the [`example` directory](https://github.com/smaho-engineering/android_wifi_info/tree/master/example/lib/main.dart).
+
+Just clone the repository and execute `flutter run`.
+
+The result app should look something like this:
+
+![AndroidWifiInfo example app](https://github.com/smaho-engineering/android_wifi_info/raw/master/gifs/android_wifi_info_-_example_app.gif)
+
+Please keep in mind that this is an Android-only plugin.
+
+## Getting Started with Flutter
 
 This project is a starting point for a Flutter application.
 
