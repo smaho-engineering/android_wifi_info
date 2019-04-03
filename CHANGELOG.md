@@ -1,3 +1,7 @@
+## 0.1.1
+
+* Fix br0k3n URL to the Pub
+
 ## 0.1.0
 
 * All `WifiInfo` methods are implemented except:

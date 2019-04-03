@@ -12,7 +12,7 @@ is active or is in the process of being set up.
 
 ## References
 
-The plugin is published on Dart Pub [`pub.dartlang.org/packages/android_wifi_info`](https://pub.dartlang.org/packages/ios_network_info)
+The plugin is published on Dart Pub [`pub.dartlang.org/packages/android_wifi_info`](https://pub.dartlang.org/packages/android_wifi_info)
 
 You can read the [API reference](https://pub.dartlang.org/documentation/android_wifi_info/latest/) on Dart Pub.
 
