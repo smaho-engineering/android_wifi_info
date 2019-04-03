@@ -1,3 +1,4 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Initial release.
+* Still lots of todos, missing docs, readmes, examples. For 0.1.x, we'll have all of them
