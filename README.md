@@ -35,7 +35,7 @@ getNetworkInfo() async {
 
 For a working example app, see the [`example` directory](https://github.com/smaho-engineering/android_wifi_info/tree/master/example/lib/main.dart).
 
-![AndroidWifiInfo example app](https://github.com/smaho-engineering/android_wifi_info/raw/master/gifs/android_wifi_info_-_example_app.gif)
+[To view example screen record, click here](https://github.com/smaho-engineering/android_wifi_info/raw/master/gifs/android_wifi_info_-_example_app.mp4)
 
 ### Documentation
 

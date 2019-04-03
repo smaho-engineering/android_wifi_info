@@ -6,9 +6,7 @@ For a working example app, see the [`example` directory](https://github.com/smah
 
 Just clone the repository and execute `flutter run`.
 
-The result app should look something like this:
-
-![AndroidWifiInfo example app](https://github.com/smaho-engineering/android_wifi_info/raw/master/gifs/android_wifi_info_-_example_app.gif)
+[To view example screen record, click here](https://github.com/smaho-engineering/android_wifi_info/raw/master/gifs/android_wifi_info_-_example_app.mp4)
 
 Please keep in mind that this is an Android-only plugin.
 
